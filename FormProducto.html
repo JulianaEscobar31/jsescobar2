@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Producto</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos Básicos</legend>
+            Nombre del Producto:
+            <input type="text" autofocus required><br><br>
+
+            Descripción <br>
+            <textarea name="descrip" id="descrip" cols="30" rows="5"></textarea><br><br>
+
+            Foto: <br>
+            <input type="file" name="foto" id="foto"><br><br>
+            <input type="checkbox" name="" id="">Añadir información confidencial
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Datos Económicos</legend>
+            Precio:
+            <input type="number" name="precio" id="precio">$
+            Impuestos:
+            <select>
+                <option value="4">4%</option>
+                <option value="12">12%</option>
+            </select><br><br>
+            Promoción<br>
+            <input type="radio" name="prom" id="ninguno" checked>Ninguno <br>
+            <input type="radio" name="prom" id="transgrat">Transporte gratuito<br>
+            <input type="radio" name="prom" id="descuento">Descuento 5%
+        </fieldset>
+        <br>
+        <input type="submit" value="Guardar Cambios">
+        <input type="reset" value="Borrar los datos introducidos">        
+    </form>
+</body>
+
+</html>

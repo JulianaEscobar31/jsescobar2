@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Formulario Registro</title>
+</head>
+<script src="js/ocultarForm.js"></script>
+<body>
+    <form action="" method="post" name="FormDireccion" target="_blank">
+        <fieldset>
+            <legend>DIRECCIÓN DE ENVÍO</legend>
+            Calle Principal<br>
+            <input type="text"><br><br>
+            Transversal<br>
+            <input type="text"><br><br>
+            <input type="checkbox" name="entrega" id="entrega2" onclick="ocultar(this.checked);" checked>Entrega al propietario <br>
+            <input type="checkbox" name="entrega" id="entrega2" onclick="mostrar(this.checked);">Entrega a un tercero <br><br>
+            Cantones: 
+            <select name="Cantones" id="">
+                <option value="Q">Quito</option>
+                <option value="R">Rumiñahui</option>
+                <option value="C">Cayambe</option>
+                <option value="PM">Pedro Moncayo</option>
+            </select>
+            <br><br>
+            <input type="submit" id="enviarDir" name="enviarDir" value="ENVIAR DATOS">
+
+        </fieldset>
+    </form> <br>
+    <form action="" method="post" name="InfoConf" id="InfoConf" target="_blank">
+        <fieldset>
+            <legend>INFORMACIÓN CONFIDENCIAL</legend>
+            Código Postal:
+            <input type="text"><br><br>
+            Referencia de la Dirección: <br>
+            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" id="Mensaje"></textarea><br><br>
+            <input type="submit" value="Guardar">
+        </fieldset>
+    </form>    
+</body>
+</html>
